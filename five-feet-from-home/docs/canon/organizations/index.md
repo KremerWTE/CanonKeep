@@ -1,0 +1,38 @@
+# Organizations Canon
+
+- [BSS Asia Lab](./bss-asia-lab.md) - Regional Office
+- [BSS DC Lab](./bss-dc-lab.md) - Regional Office
+- [BSS LA Lab](./bss-la-lab.md) - Regional Office
+- [BSS London Lab](./bss-london-lab.md) - Regional Office
+- [BSS Middle East Lab](./bss-middle-east-lab.md) - Regional Office
+- [BSS New York Lab](./bss-new-york-lab.md) - Regional Office
+- [BSS Strategic Advisors](./bss-strategic-advisors.md) - Private Firm
+- [Barclay & Sterling](./barclay-sterling.md) - BSS Client
+- [Barrett Security Solutions](./barrett-security-solutions.md) - Corporation
+- [Barrett Strategic Solutions (BSS)](./barrett-strategic-solutions-bss.md) - Corporation
+- [Donnelly Capital](./donnelly-capital.md) - Private Equity
+- [Evie's Catering Company](./evie-s-catering-company.md) - Business
+- [Hale Industries](./hale-industries.md) - Corporate
+- [Harrington Global](./harrington-global.md) - BSS Client
+- [Jasper's Iron Council](./jasper-s-iron-council.md) - Personal Advisory Circle
+- [Kendra's Athletic Sponsors](./kendra-s-athletic-sponsors.md) - Sponsorship Portfolio
+- [Maison Aurelia](./maison-aurelia.md) - Corporation
+- [Matt's Vacation Home Business](./matt-s-vacation-home-business.md) - Business
+- [Palace of Honor](./palace-of-honor.md) - Charitable Organization
+- [Palace of Honor (POH)](./palace-of-honor-poh.md) - Secret Society / Patronage Network
+- [Romano Ventures](./romano-ventures.md) - Investment
+- [Sapientia Minervae (The Wives Club)](./sapientia-minervae-the-wives-club.md) - Women's Power Network
+- [Sara's CrossFit Empire](./sara-s-crossfit-empire.md) - Business
+- [Sara's Gym](./sara-s-gym.md) - Business
+- [Shen International Holdings](./shen-international-holdings.md) - BSS Client
+- [Special Olympics Charlotte](./special-olympics-charlotte.md) - Non-Profit
+- [Strategic Response Team (SRT)](./strategic-response-team-srt.md) - Elite Unit
+- [Strong & Savory Foundation](./strong-savory-foundation.md) - Non-Profit
+- [Texas Event Company](./texas-event-company.md) - Business
+- [The Alloy Network](./the-alloy-network.md) - Informant Network
+- [The Forge (BSS HQ)](./the-forge-bss-hq.md) - Headquarters
+- [The Foundry](./the-foundry.md) - Private Brotherhood / Advisory Council
+- [The Sirens Network (Vixens)](./the-sirens-network-vixens.md) - Shadow Organization
+- [The Wives Club](./the-wives-club.md) - Secret Society / Power Network
+- [The Wives Club / Protectresses of Honor](./the-wives-club-protectresses-of-honor.md) - Elite Social Order
+- [Wives Club](./wives-club.md) - Social Club

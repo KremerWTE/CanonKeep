@@ -1,0 +1,831 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./story.db"
+}
+
+// ============================================
+// USER AUTHENTICATION
+// ============================================
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  password      String    // Hashed password
+  role          String    @default("viewer") // admin, editor, viewer
+  isActive      Boolean   @default(true)
+  lastLogin     DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  sessions      Session[]
+  presence      UserPresence[]
+  editLocks     EditLock[]
+  comments      Comment[]
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  createdAt    DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model UserPresence {
+  id         String   @id @default(cuid())
+  userId     String
+  entityType String   // character, chapter, crisis, etc.
+  entityId   String
+  entityName String?
+  action     String   @default("viewing") // viewing, editing
+  lastSeen   DateTime @default(now())
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, entityType, entityId])
+  @@index([entityType, entityId])
+  @@index([lastSeen])
+}
+
+model EditLock {
+  id         String   @id @default(cuid())
+  userId     String
+  entityType String
+  entityId   String
+  entityName String?
+  lockedAt   DateTime @default(now())
+  expiresAt  DateTime // Locks expire after 5 minutes of inactivity
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([entityType, entityId])
+  @@index([expiresAt])
+}
+
+model Comment {
+  id         String   @id @default(cuid())
+  userId     String
+  entityType String
+  entityId   String
+  parentId   String?  // For replies
+  content    String
+  isResolved Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user    User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  parent  Comment?  @relation("CommentReplies", fields: [parentId], references: [id])
+  replies Comment[] @relation("CommentReplies")
+
+  @@index([entityType, entityId])
+  @@index([parentId])
+}
+
+// ============================================
+// PROJECTS & DOCUMENTS
+// ============================================
+
+model Project {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  genre       String?
+  povStyle    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  documents         Document[]
+  characters        Character[]
+  locations         Location[]
+  factions          Faction[]
+  plotThreads       PlotThread[]
+  events            Event[]
+  chapters          Chapter[]
+  books             Book[]
+  conflicts         Conflict[]
+  notes             Note[]
+  crises            Crisis[]
+  organizations     Organization[]
+  bookSeries        BookSeries[]
+  galas             Gala[]
+  businessTrips     BusinessTrip[]
+  storylines        Storyline[]
+  funTimeEncounters FunTimeEncounter[]
+  tags              Tag[]
+}
+
+model Document {
+  id           String   @id @default(cuid())
+  projectId    String
+  fileName     String
+  filePath     String
+  fileHash     String   // For detecting changes
+  ingestedAt   DateTime @default(now())
+  lastModified DateTime
+
+  project Project       @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  blocks  ContentBlock[]
+
+  @@unique([projectId, fileName])
+}
+
+model ContentBlock {
+  id             String   @id @default(cuid())
+  documentId     String
+  sectionHeading String?
+  blockIndex     Int
+  rawText        String
+  styleType      String   // heading, paragraph, list, table
+  headingLevel   Int?     // 1-6 for headings
+  createdAt      DateTime @default(now())
+
+  document    Document     @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  provenances Provenance[]
+
+  @@index([documentId])
+}
+
+// Links extracted entities back to source content
+model Provenance {
+  id           String @id @default(cuid())
+  entityType   String // character, location, chapter, etc.
+  entityId     String
+  blockId      String
+  fieldName    String? // Which field this block provides (e.g., "motivation")
+  confidence   Float  @default(1.0)
+
+  block ContentBlock @relation(fields: [blockId], references: [id], onDelete: Cascade)
+
+  @@index([entityType, entityId])
+  @@index([blockId])
+}
+
+// ============================================
+// CHARACTERS
+// ============================================
+
+model Character {
+  id           String   @id @default(cuid())
+  projectId    String
+
+  // Core Identity
+  name         String   // Canon Name
+  title        String?  // Mr., Mrs., Dr., etc.
+  firstName    String?
+  lastName     String?
+  nickname     String?  // Primary nickname/callsign
+  aliases      String?  // JSON array of aliases (legacy)
+  nameVariants String?  // JSON array - all name variants
+
+  // Classification
+  archetype    String?
+  age          String?
+  isConfirmed  Boolean  @default(true)
+
+  // Affiliations
+  affiliationRole   String?  // Affiliation/Role
+  hubLocation       String?  // Hub/Location
+  bssRole           String?  // Role in BSS
+  wivesClubRole     String?  // Role in Wives Club
+  maisonAureliaRole String?  // Role in Maison Aurelia
+  pohRole           String?  // Role in POH
+
+  // Background & Education
+  education         String?  // All education
+  careerHistory     String?  // Career History (verbatim)
+  background        String?  // General background
+
+  // Personality & Character
+  modeledAfter      String?  // Modeled After / Lookalike
+  personality       String?  // Personality (verbatim)
+  motivations       String?
+  fears             String?
+  flaw              String?
+  secrets           String?
+  voiceNotes        String?
+  catchphrases      String?  // Catchphrases (verbatim)
+
+  // Physical
+  appearance        String?  // Physical Description (verbatim)
+  wardrobeStyle     String?  // Wardrobe / Style (verbatim)
+  fitnessSports     String?  // Fitness / Sports (verbatim)
+  portraitUrl       String?  // AI-generated portrait image URL
+  portraitPrompt    String?  // Prompt used to generate portrait
+
+  // Relationships & Network
+  relationships     String?  // Relationships (verbatim)
+  mentorsMentees    String?  // Mentors / Mentees (verbatim)
+
+  // Story Presence
+  majorCases        String?  // Major Cases / Projects (verbatim)
+  firstAppearance   String?  // First Appearance (Doc/Thread)
+  reputationalNotes String?  // Reputational Notes (verbatim)
+
+  // Cultural/Personal
+  faithRoots        String?  // Faith / Roots (verbatim)
+  clubsAssociations String?  // Clubs / Associations (verbatim)
+
+  // Arc
+  arcStart     String?
+  arcChange    String?
+  arcEnd       String?
+
+  // Source Tracking
+  sourceFiles  String?  // Source Files
+  tags         String?  // JSON array
+  rawNotes     String?
+
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  project             Project               @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  relationshipsFrom   CharacterRelationship[] @relation("RelationshipFrom")
+  relationshipsTo     CharacterRelationship[] @relation("RelationshipTo")
+  chapterAppearances  ChapterCharacter[]
+  plotInvolvements    PlotCharacter[]
+  eventParticipations EventCharacter[]
+
+  @@unique([projectId, name])
+  @@index([projectId])
+}
+
+model CharacterRelationship {
+  id              String  @id @default(cuid())
+  fromCharacterId String
+  toCharacterId   String
+  relationshipType String // sibling, lover, enemy, mentor, etc.
+  description     String?
+  confidence      Float   @default(1.0)
+
+  fromCharacter Character @relation("RelationshipFrom", fields: [fromCharacterId], references: [id], onDelete: Cascade)
+  toCharacter   Character @relation("RelationshipTo", fields: [toCharacterId], references: [id], onDelete: Cascade)
+
+  @@unique([fromCharacterId, toCharacterId, relationshipType])
+}
+
+// ============================================
+// LOCATIONS & FACTIONS
+// ============================================
+
+model Location {
+  id           String   @id @default(cuid())
+  projectId    String
+  name         String
+  description  String?
+  rules        String?  // World-building rules specific to location
+  significance String?
+  tags         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  events  EventLocation[]
+  scenes  Scene[]
+
+  @@unique([projectId, name])
+  @@index([projectId])
+}
+
+model Faction {
+  id          String   @id @default(cuid())
+  projectId   String
+  name        String
+  description String?
+  goals       String?
+  methods     String?
+  tags        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, name])
+  @@index([projectId])
+}
+
+// ============================================
+// PLOT THREADS
+// ============================================
+
+model PlotThread {
+  id           String   @id @default(cuid())
+  projectId    String
+  name         String
+  premise      String?
+  stakes       String?
+  phases       String?  // JSON array of phase descriptions
+  resolution   String?
+  status       String   @default("active") // active, resolved, abandoned
+  tags         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  project    Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  characters PlotCharacter[]
+  chapters   ChapterPlot[]
+
+  @@unique([projectId, name])
+  @@index([projectId])
+}
+
+model PlotCharacter {
+  id           String @id @default(cuid())
+  plotThreadId String
+  characterId  String
+  role         String? // protagonist, antagonist, catalyst, etc.
+
+  plotThread PlotThread @relation(fields: [plotThreadId], references: [id], onDelete: Cascade)
+  character  Character  @relation(fields: [characterId], references: [id], onDelete: Cascade)
+
+  @@unique([plotThreadId, characterId])
+}
+
+// ============================================
+// EVENTS & TIMELINE
+// ============================================
+
+model Event {
+  id           String   @id @default(cuid())
+  projectId    String
+  name         String
+  description  String?
+  timelineRef  String?  // Relative or absolute time reference
+  timelineSort Int?     // Numeric sort order for timeline
+  consequences String?
+  tags         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  project    Project          @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  characters EventCharacter[]
+  locations  EventLocation[]
+  chapters   ChapterEvent[]
+
+  @@index([projectId])
+  @@index([timelineSort])
+}
+
+model EventCharacter {
+  id          String @id @default(cuid())
+  eventId     String
+  characterId String
+  role        String? // participant, witness, mentioned
+
+  event     Event     @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+
+  @@unique([eventId, characterId])
+}
+
+model EventLocation {
+  id         String @id @default(cuid())
+  eventId    String
+  locationId String
+
+  event    Event    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  location Location @relation(fields: [locationId], references: [id], onDelete: Cascade)
+
+  @@unique([eventId, locationId])
+}
+
+// ============================================
+// CHAPTERS & SCENES
+// ============================================
+
+model Chapter {
+  id          String   @id @default(cuid())
+  projectId   String
+  bookId      String?
+  number      Int?
+  title       String?
+  synopsis    String?
+  beats       String?  // JSON array of beat descriptions
+  draftText   String?
+  pov         String?  // POV character name
+  status      String   @default("draft") // draft, revised, final
+  wordCount   Int?
+  tags        String?
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  project    Project            @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  book       Book?              @relation(fields: [bookId], references: [id])
+  scenes     Scene[]
+  characters ChapterCharacter[]
+  plots      ChapterPlot[]
+  events     ChapterEvent[]
+
+  @@index([projectId])
+  @@index([bookId])
+}
+
+model Scene {
+  id          String   @id @default(cuid())
+  chapterId   String
+  locationId  String?
+  sceneNumber Int
+  description String?
+  draftText   String?
+  goal        String?  // Scene goal/purpose
+  conflict    String?
+  outcome     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  chapter  Chapter   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  location Location? @relation(fields: [locationId], references: [id])
+
+  @@index([chapterId])
+}
+
+model ChapterCharacter {
+  id          String @id @default(cuid())
+  chapterId   String
+  characterId String
+  role        String? // pov, major, minor, mentioned
+
+  chapter   Chapter   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+
+  @@unique([chapterId, characterId])
+}
+
+model ChapterPlot {
+  id           String @id @default(cuid())
+  chapterId    String
+  plotThreadId String
+  advancement  String? // How this chapter advances the plot
+
+  chapter    Chapter    @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  plotThread PlotThread @relation(fields: [plotThreadId], references: [id], onDelete: Cascade)
+
+  @@unique([chapterId, plotThreadId])
+}
+
+model ChapterEvent {
+  id        String @id @default(cuid())
+  chapterId String
+  eventId   String
+
+  chapter Chapter @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  event   Event   @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@unique([chapterId, eventId])
+}
+
+// ============================================
+// BOOKS (Collections of Chapters)
+// ============================================
+
+model Book {
+  id          String   @id @default(cuid())
+  projectId   String
+  title       String
+  subtitle    String?
+  synopsis    String?
+  structure   String?  // JSON: hook, inciting incident, etc.
+  status      String   @default("planning") // planning, drafting, complete
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  project  Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  chapters Chapter[]
+
+  @@unique([projectId, title])
+  @@index([projectId])
+}
+
+// ============================================
+// CONTINUITY & CONFLICTS
+// ============================================
+
+model Conflict {
+  id            String   @id @default(cuid())
+  projectId     String
+  conflictType  String   // age_mismatch, timeline_conflict, relationship_conflict, duplicate_entity
+  severity      String   // error, warning, info
+  description   String
+  entityTypeA   String
+  entityIdA     String
+  fieldA        String?
+  entityTypeB   String?
+  entityIdB     String?
+  fieldB        String?
+  resolved      Boolean  @default(false)
+  resolution    String?
+  createdAt     DateTime @default(now())
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@index([resolved])
+}
+
+// ============================================
+// NOTES (Unclassified Content)
+// ============================================
+
+model Note {
+  id                String   @id @default(cuid())
+  projectId         String
+  title             String?
+  content           String
+  suggestedType     String?  // Suggested entity type
+  suggestedName     String?  // Suggested entity name
+  processed         Boolean  @default(false)
+  tags              String?
+  createdAt         DateTime @default(now())
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@index([processed])
+}
+
+// ============================================
+// CRISES & CASES (BSS Operations)
+// ============================================
+
+model Crisis {
+  id              String   @id @default(cuid())
+  projectId       String
+  name            String
+  codeName        String?  // Internal code name
+  clientName      String?
+  clientType      String?  // Fortune 500, Government, Individual, etc.
+  crisisType      String?  // Data breach, Scandal, Hostile takeover, etc.
+  severity        String?  // critical, high, medium, low
+  location        String?  // Where crisis occurs
+  timeframe       String?  // When in story timeline
+  description     String?
+  situation       String?  // Initial situation
+  complications   String?  // What makes it difficult
+  resolution      String?  // How it's resolved
+  outcome         String?  // Final outcome
+  lessonsLearned  String?
+  bssTeam         String?  // JSON array of team members involved
+  stakes          String?  // What's at stake
+  status          String   @default("active") // active, resolved, ongoing
+  bookAppearance  String?  // Which book/chapter
+  tags            String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, name])
+  @@index([projectId])
+}
+
+// ============================================
+// ORGANIZATIONS & COMPANIES
+// ============================================
+
+model Organization {
+  id              String   @id @default(cuid())
+  projectId       String
+  name            String
+  shortName       String?  // BSS, POH, etc.
+  type            String?  // Corporation, Firm, Club, Government, etc.
+  industry        String?
+  description     String?
+  headquarters    String?
+  founded         String?
+  founder         String?
+  leadership      String?  // JSON array of leaders
+  employees       String?  // Size/scale
+  services        String?  // What they do
+  clients         String?  // Notable clients
+  competitors     String?
+  relationships   String?  // Connections to other orgs
+  significance    String?  // Role in story
+  tags            String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, name])
+  @@index([projectId])
+}
+
+// ============================================
+// GALAS & EVENTS
+// ============================================
+
+model Gala {
+  id                   String   @id @default(cuid())
+  projectId            String
+  name                 String
+  organization         String?  // Who it's for
+  venue                String?
+  location             String?  // City/country
+  date                 String?  // When in story timeline
+  purpose              String?  // Charity, networking, celebration, etc.
+  dresscode            String?
+  attendees            String?  // JSON array of key attendees
+  significance         String?  // Story significance
+  events               String?  // What happens at this gala
+  hostOrganizer        String?  // Who hosts/organizes
+  bookAppearance       String?  // Which book/chapter
+  clothingDescriptions String?  // JSON object of character -> outfit descriptions
+  beforeActivities     String?  // What happens before the gala
+  afterActivities      String?  // What happens after the gala
+  nextMorning          String?  // Next morning breakfast/activities
+  tags                 String?
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, name])
+  @@index([projectId])
+}
+
+// ============================================
+// STORYLINES & VIGNETTES
+// ============================================
+
+model Storyline {
+  id          String   @id @default(cuid())
+  projectId   String
+  title       String
+  category    String?  // Character Arc, Flashback, Vignette, etc.
+  description String?
+  content     String?  // The full storyline/scene text
+  characters  String?  // JSON array of involved characters
+  timeline    String?  // When it occurs
+  location    String?  // Where it occurs
+  themes      String?  // JSON array of themes
+  tags        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, title])
+  @@index([projectId])
+}
+
+// ============================================
+// BUSINESS TRIPS
+// ============================================
+
+model BusinessTrip {
+  id              String   @id @default(cuid())
+  projectId       String
+  name            String
+  traveler        String?  // Who travels
+  destination     String?  // Where
+  origin          String?  // From where
+  purpose         String?  // Why
+  duration        String?  // How long
+  timeframe       String?  // When in story timeline
+  crisisId        String?  // Related crisis if any
+  crisisName      String?  // Crisis name for reference
+  companions      String?  // JSON array - who goes with
+  storyEvents     String?  // What happens during trip
+  homeImpact      String?  // Impact on family/home
+  outcome         String?  // How it resolves
+  bookAppearance  String?  // Which book/chapter
+  tripOrder       Int?     // Order in story sequence
+  tags            String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@index([tripOrder])
+}
+
+// ============================================
+// FUN TIME / INTIMATE ENCOUNTERS
+// ============================================
+
+model FunTimeEncounter {
+  id              String   @id @default(cuid())
+  projectId       String
+  title           String
+  encounterType   String?  // threesome, couple, solo, toys, tension
+  participants    String?  // JSON array of character names
+  location        String?  // Where it happened
+  galaConnection  String?  // Related gala if any
+  setting         String?  // The setup/context
+  description     String?  // What happened
+  toysUsed        String?  // JSON array of toys if any
+  powerDynamic    String?  // Who led, control dynamics
+  aftermath       String?  // What it meant after
+  emotionalImpact String?  // How it affected relationships
+  isSecret        Boolean  @default(true)  // Is this known to others
+  bookAppearance  String?  // Which book/chapter
+  tags            String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@index([encounterType])
+}
+
+// ============================================
+// BOOK SERIES & SPIN-OFFS
+// ============================================
+
+model BookSeries {
+  id              String   @id @default(cuid())
+  projectId       String
+  name            String
+  seriesType      String?  // Main, Spin-off, Companion
+  protagonist     String?  // Main character of series
+  premise         String?
+  themes          String?  // JSON array
+  totalBooks      Int?
+  status          String   @default("planned") // planned, in-progress, complete
+  readingOrder    Int?     // Order in overall universe
+  parentSeries    String?  // If spin-off, which main series
+  connections     String?  // How it connects to other series
+  timeline        String?  // When it takes place relative to main
+  books           String?  // JSON array of book titles/synopses
+  tags            String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, name])
+  @@index([projectId])
+}
+
+// ============================================
+// AUDIT LOG (Version History)
+// ============================================
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  projectId   String
+  entityType  String   // character, crisis, gala, book, chapter, etc.
+  entityId    String   // ID of the modified entity
+  entityName  String?  // Name for display purposes
+  action      String   // create, update, delete
+  fieldName   String?  // Which field was changed (for updates)
+  oldValue    String?  // Previous value
+  newValue    String?  // New value
+  changedBy   String?  // User who made the change (for future auth)
+  createdAt   DateTime @default(now())
+
+  @@index([projectId])
+  @@index([entityType, entityId])
+  @@index([createdAt])
+}
+
+// ============================================
+// TAG SYSTEM (Cross-referencing)
+// ============================================
+
+model Tag {
+  id          String   @id @default(cuid())
+  projectId   String
+  name        String
+  color       String   @default("#6B7280") // Hex color for display
+  category    String?  // theme, character-trait, plot-element, setting, etc.
+  description String?
+  usageCount  Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  project     Project    @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  entityTags  EntityTag[]
+
+  @@unique([projectId, name])
+  @@index([projectId])
+  @@index([category])
+}
+
+model EntityTag {
+  id         String   @id @default(cuid())
+  tagId      String
+  entityType String   // character, crisis, gala, chapter, location, etc.
+  entityId   String
+  entityName String?  // Cached name for display
+  createdAt  DateTime @default(now())
+
+  tag Tag @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@unique([tagId, entityType, entityId])
+  @@index([tagId])
+  @@index([entityType, entityId])
+}

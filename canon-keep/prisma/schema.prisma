@@ -1,0 +1,369 @@
+// Canon Keep - AI-Native Author Intelligence Platform
+// Database Schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// ============================================
+// USER & PROJECT MANAGEMENT
+// ============================================
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  projects  Project[]
+}
+
+model Project {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  series      Series[]
+  uploads     Upload[]
+  entities    Entity[]
+  alerts      CanonAlert[]
+  jobs        Job[]
+
+  @@index([userId])
+}
+
+// ============================================
+// STORY STRUCTURE
+// ============================================
+
+model Series {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  projectId   String
+  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  orderIndex  Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  books       Book[]
+
+  @@index([projectId])
+}
+
+model Book {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  seriesId    String?
+  series      Series?  @relation(fields: [seriesId], references: [id], onDelete: SetNull)
+  projectId   String
+  orderIndex  Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  chapters    Chapter[]
+
+  @@index([seriesId])
+  @@index([projectId])
+}
+
+model Chapter {
+  id           String   @id @default(uuid())
+  title        String
+  orderIndex   Int      @default(0)
+  bookId       String
+  book         Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  content      String   // Full text content
+  wordCount    Int      @default(0)
+  uploadId     String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  mentions     EntityMention[]
+  feedback     AIFeedback[]
+  suggestions  AISuggestion[]
+  events       Event[]
+
+  @@index([bookId])
+  @@index([uploadId])
+}
+
+// ============================================
+// FILE UPLOADS & INGESTION
+// ============================================
+
+model Upload {
+  id            String   @id @default(uuid())
+  filename      String
+  originalName  String
+  mimeType      String
+  fileSize      Int
+  filePath      String
+  projectId     String
+  project       Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  status        String   @default("pending") // pending, processing, completed, failed
+  processedAt   DateTime?
+  error         String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([projectId])
+  @@index([status])
+}
+
+// ============================================
+// ENTITY EXTRACTION & CANON GRAPH
+// ============================================
+
+model Entity {
+  id          String   @id @default(uuid())
+  name        String
+  type        String   // character, location, event, object, faction, theme
+  description String?
+  projectId   String
+  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  aliases     String?  // JSON array of alternative names
+  metadata    String?  // JSON for type-specific attributes
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  mentions        EntityMention[]
+  facts           CanonFact[]
+  sourceRelations Relationship[] @relation("SourceEntity")
+  targetRelations Relationship[] @relation("TargetEntity")
+
+  @@unique([projectId, name, type])
+  @@index([projectId])
+  @@index([type])
+}
+
+model EntityMention {
+  id              String   @id @default(uuid())
+  entityId        String
+  entity          Entity   @relation(fields: [entityId], references: [id], onDelete: Cascade)
+  chapterId       String
+  chapter         Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  startOffset     Int
+  endOffset       Int
+  evidenceSnippet String   // The actual text snippet
+  context         String?  // Surrounding context for better understanding
+  confidence      Float    @default(1.0)
+  createdAt       DateTime @default(now())
+
+  @@index([entityId])
+  @@index([chapterId])
+}
+
+model Relationship {
+  id              String   @id @default(uuid())
+  sourceEntityId  String
+  sourceEntity    Entity   @relation("SourceEntity", fields: [sourceEntityId], references: [id], onDelete: Cascade)
+  targetEntityId  String
+  targetEntity    Entity   @relation("TargetEntity", fields: [targetEntityId], references: [id], onDelete: Cascade)
+  relationType    String   // friend_of, enemy_of, parent_of, located_in, member_of, etc.
+  description     String?
+  evidence        String?  // Citation/snippet proving relationship
+  chapterId       String?  // Where this relationship was established
+  confidence      Float    @default(1.0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([sourceEntityId])
+  @@index([targetEntityId])
+  @@index([relationType])
+}
+
+// ============================================
+// CANON FACTS (TIME-SCOPED ATTRIBUTES)
+// ============================================
+
+model CanonFact {
+  id            String   @id @default(uuid())
+  entityId      String
+  entity        Entity   @relation(fields: [entityId], references: [id], onDelete: Cascade)
+  factType      String   // age, eye_color, hair_color, status_alive, location, injury, etc.
+  factValue     String
+  validFrom     String?  // Chapter ID or narrative timestamp where fact becomes true
+  validUntil    String?  // Chapter ID or narrative timestamp where fact ends
+  evidence      String?  // Citation proving this fact
+  chapterId     String?  // Source chapter
+  confidence    Float    @default(1.0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([entityId])
+  @@index([factType])
+}
+
+// ============================================
+// STORY EVENTS & TIMELINE
+// ============================================
+
+model Event {
+  id              String   @id @default(uuid())
+  name            String
+  description     String?
+  chapterId       String
+  chapter         Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  orderIndex      Int      @default(0)  // Order within the chapter
+  narrativeTime   String?  // Relative time marker (e.g., "2 days before", "Chapter 1")
+  absoluteTime    String?  // If story has dates
+  participants    String?  // JSON array of entity IDs
+  location        String?  // Entity ID of location
+  evidence        String?  // Text snippet describing event
+  eventType       String?  // action, dialogue, revelation, flashback, etc.
+  createdAt       DateTime @default(now())
+
+  @@index([chapterId])
+  @@index([orderIndex])
+}
+
+// ============================================
+// CANON CONSISTENCY ALERTS
+// ============================================
+
+model CanonAlert {
+  id              String   @id @default(uuid())
+  projectId       String
+  project         Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  alertType       String   // trait_conflict, alive_dead, knowledge_state, event_order, location_desc, etc.
+  severity        String   // low, medium, high
+  confidence      Float
+  title           String
+  description     String
+  evidence        String   // JSON with detailed evidence
+  suggestedFix    String?  // AI-generated suggestion
+  status          String   @default("open") // open, dismissed, resolved
+  resolvedAt      DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([projectId])
+  @@index([alertType])
+  @@index([status])
+}
+
+// ============================================
+// AI FEEDBACK & SUGGESTIONS
+// ============================================
+
+model AIFeedback {
+  id          String   @id @default(uuid())
+  chapterId   String?
+  chapter     Chapter?  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  bookId      String?   // For book-level feedback
+  mode        String   // gentle, professional, brutal
+  summary     String   // JSON containing structured feedback
+  pacing      String?
+  clarity     String?
+  stakes      String?
+  characterAgency String?
+  scenePurpose    String?
+  emotionalImpact String?
+  strengths   String?  // JSON array
+  weaknesses  String?  // JSON array
+  createdAt   DateTime @default(now())
+
+  @@index([chapterId])
+  @@index([bookId])
+  @@index([mode])
+}
+
+model AISuggestion {
+  id              String   @id @default(uuid())
+  chapterId       String
+  chapter         Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  suggestionType  String   // weak_subplot, dropped_thread, escalation, thematic
+  title           String
+  description     String
+  canonConstraints String? // JSON array of canon facts that constrain this suggestion
+  evidence        String?  // What prompted this suggestion
+  priority        String   @default("medium") // low, medium, high
+  status          String   @default("pending") // pending, accepted, rejected
+  createdAt       DateTime @default(now())
+
+  @@index([chapterId])
+  @@index([suggestionType])
+}
+
+// ============================================
+// AI CHAT (WRITING COACH)
+// ============================================
+
+model ChatSession {
+  id          String   @id @default(uuid())
+  projectId   String
+  chapterId   String?  // Optional chapter context
+  bookId      String?  // Optional book context
+  mode        String   @default("professional") // gentle, professional, brutal
+  title       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  messages    ChatMessage[]
+
+  @@index([projectId])
+  @@index([chapterId])
+  @@index([bookId])
+}
+
+model ChatMessage {
+  id          String      @id @default(uuid())
+  sessionId   String
+  session     ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  role        String      // user, assistant
+  content     String
+  createdAt   DateTime    @default(now())
+
+  @@index([sessionId])
+}
+
+// ============================================
+// JOB TRACKING
+// ============================================
+
+model Job {
+  id          String   @id @default(uuid())
+  projectId   String
+  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  type        String   // ingestion, parsing, analysis, feedback
+  status      String   @default("pending") // pending, running, completed, failed
+  progress    Int      @default(0) // 0-100
+  totalSteps  Int      @default(0)
+  currentStep Int      @default(0)
+  stepLabel   String?
+  error       String?
+  metadata    String?  // JSON with job-specific data
+  startedAt   DateTime?
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  logs        JobLog[]
+
+  @@index([projectId])
+  @@index([status])
+  @@index([type])
+}
+
+model JobLog {
+  id        String   @id @default(uuid())
+  jobId     String
+  job       Job      @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  level     String   // info, warn, error
+  message   String
+  metadata  String?  // JSON with additional context
+  createdAt DateTime @default(now())
+
+  @@index([jobId])
+}

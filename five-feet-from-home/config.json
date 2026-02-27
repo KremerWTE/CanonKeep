@@ -1,0 +1,49 @@
+{
+  "defaultProject": "Five Feet From Home",
+  "ingestPath": "./ingest",
+  "tags": {
+    "genres": ["romance", "drama", "contemporary", "women's fiction"],
+    "povStyles": ["first-person", "third-person-limited", "third-person-omniscient"],
+    "tones": ["romantic", "emotional", "dramatic", "hopeful", "steamy"],
+    "themes": ["love", "family", "friendship", "business", "growth", "relationships", "loyalty"]
+  },
+  "extraction": {
+    "characterHeadingPatterns": [
+      "^Character:\\s*(.+)$",
+      "^(.+)\\s*[-—]\\s*(?:Background|Profile|Bio)$",
+      "^(?:Protagonist|Antagonist|Character):\\s*(.+)$"
+    ],
+    "chapterHeadingPatterns": [
+      "^Chapter\\s+(\\d+)(?:\\s*[-:—]\\s*(.+))?$",
+      "^Ch\\.?\\s*(\\d+)(?:\\s*[-:—]\\s*(.+))?$",
+      "^(\\d+)\\.\\s+(.+)$"
+    ],
+    "plotHeadingPatterns": [
+      "^Plot\\s*(?:Thread)?:\\s*(.+)$",
+      "^(?:Storyline|Arc):\\s*(.+)$",
+      "^(.+)\\s*[-—]\\s*(?:Plot|Thread|Arc)$"
+    ],
+    "locationHeadingPatterns": [
+      "^Location:\\s*(.+)$",
+      "^Setting:\\s*(.+)$",
+      "^Place:\\s*(.+)$"
+    ],
+    "fieldPatterns": {
+      "name": "^(?:Name|Full Name):\\s*(.+)$",
+      "age": "^Age:\\s*(\\d+|[a-zA-Z\\s]+)$",
+      "motivation": "^(?:Motivation|Goal|Want)s?:\\s*(.+)$",
+      "fear": "^(?:Fear|Afraid of)s?:\\s*(.+)$",
+      "secret": "^(?:Secret|Hidden)s?:\\s*(.+)$",
+      "flaw": "^(?:Flaw|Weakness)s?:\\s*(.+)$",
+      "background": "^(?:Background|History|Backstory):\\s*(.+)$",
+      "archetype": "^(?:Archetype|Role|Type):\\s*(.+)$",
+      "voice": "^(?:Voice|Speech|Dialogue)\\s*(?:Notes?)?:\\s*(.+)$",
+      "relationship": "^(?:Relationship|Connection)s?:\\s*(.+)$"
+    }
+  },
+  "namingRules": {
+    "titleCase": true,
+    "stripPunctuation": false,
+    "aliasDelimiters": ["/", "|", ",", "aka", "a.k.a."]
+  }
+}

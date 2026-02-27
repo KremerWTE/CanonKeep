@@ -1,0 +1,39 @@
+# Chloe Whitaker
+
+**Archetype:** Child
+
+**Age:** 30s-40s
+
+## Affiliations
+
+
+## Background
+
+[ADDED] Connected to the BSS/Wives Club universe through professional or social networks.
+
+## Appearance
+
+[ADDED] Presentable and appropriate for their role. Carries themselves with quiet confidence.
+
+## Wardrobe & Style
+
+[ADDED] Appropriate for their role. Quality basics.
+
+## Personality
+
+[ADDED] Professional, reliable, competent. Depth beneath the surface.
+
+## Motivations
+
+[ADDED] Success in their field. Building something meaningful.
+
+## Fears
+
+[ADDED] Failure. Being overlooked. Not measuring up.
+
+## Relationships
+
+Child of Sara Whitaker. Sara's daughter from first marriage (Mitchell). Cousins: Grace and Lucas Barrett.
+
+---
+*[Back to Characters Index](./index.md)*

@@ -1,0 +1,53 @@
+{
+  "name": "story-site",
+  "version": "1.0.0",
+  "description": "Internal Story Site - Ingest, organize, and build narratives from Word documents",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "migrate": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "ingest": "npx tsx scripts/ingest.ts",
+    "ingest:clear": "npx tsx scripts/ingest.ts --clear",
+    "seed": "npx tsx scripts/seed.ts",
+    "create-admin": "npx tsx scripts/create-admin.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "@types/jszip": "^3.4.0",
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "docx": "^8.5.0",
+    "epub-gen-memory": "^1.1.2",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.11.0",
+    "marked": "^17.0.1",
+    "next": "14.2.15",
+    "next-auth": "^5.0.0-beta.30",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "xlsx": "^0.18.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "prisma": "^5.22.0",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.19.2",
+    "type-fest": "^5.3.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

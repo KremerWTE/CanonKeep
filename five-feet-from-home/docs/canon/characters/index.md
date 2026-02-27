@@ -1,0 +1,448 @@
+# Characters Canon
+
+- [Aaron](./aaron.md) - Minor Character - Mentioned in Orbit
+- [Abigail "Abby" Sommers](./abigail-abby-sommers.md) - Siren - The Comfort Fantasy (MILF Division)
+- [Addie](./addie.md) - Patroness of Honor (POH) / BSS Senior Leader
+- [Addison Price](./addison-price.md) - Executive Assistant / Logistics Genius
+- [Adelaide](./adelaide.md) - Character
+- [Adelaide "Addie" Barrett](./adelaide-addie-barrett.md) - Matriarch/Mentor
+- [Adrian Kade](./adrian-kade.md) - Global Logistics Magnate
+- [Adriana "Ana" Reyes-Morrison](./adriana-ana-reyes-morrison.md) - POH Vestal / Next Generation
+- [Adriana Carver](./adriana-carver.md) - Siren - The Shock Trooper / Extreme
+- [Aidra Foxx](./aidra-foxx.md) - Siren - The Wild Card
+- [Alessandra D'Amico](./alessandra-d-amico.md) - Seductive Dealmaker
+- [Alessandra Romano](./alessandra-romano.md) - Italian Minervae member
+- [Alex Vega](./alex-vega.md) - Training Partner / Triathlete
+- [Alexander "Alex" Whitmore](./alexander-alex-whitmore.md) - Old Money Media Heir / The Logan Huntzberger Type
+- [Alexandra Pierce](./alexandra-pierce.md) - The Temptation / Power Client
+- [Alexis "Lex" Chen](./alexis-lex-chen.md) - Sentinel / Day Shift
+- [Alexis Amore](./alexis-amore.md) - Siren - The Latina Temptress
+- [Alicia "Ali" Grant](./alicia-ali-grant.md) - CrossFit Gym Owner
+- [Amanda](./amanda.md) - BSS Connected
+- [Ambassador Charles Whitfield](./ambassador-charles-whitfield.md) - Diplomat / Ambassador
+- [Ambassador Lila Serrano](./ambassador-lila-serrano.md) - Diplomat / Ambassador
+- [Ambassador Robert Hale](./ambassador-robert-hale.md) - Diplomat / Ambassador
+- [Ambassador William Carrington](./ambassador-william-carrington.md) - Diplomat / Ambassador
+- [Amelia Kim](./amelia-kim.md) - Tech Executive Spouse
+- [Amira D'Souza](./amira-d-souza.md) - The Tier-1 Burnout
+- [Amélie Vogt](./am-lie-vogt.md) - Swiss Banking Power
+- [Angela Whitmore](./angela-whitmore.md) - Siren - The Powerhouse Bombshell
+- [Angelina "Angie" Cross](./angelina-angie-cross.md) - Siren - The Southern Power Player
+- [Anik Archambault](./anik-archambault.md) - Former Figure Skater
+- [Anika Sharma](./anika-sharma.md) - Luxury Hospitality Executive
+- [Anna Cho](./anna-cho.md) - Best Friend / World-Class Photographer
+- [Annalise](./annalise.md) - Wives Club Member
+- [Annie Agar](./annie-agar.md) - Siren - The Sports Media Sweetheart
+- [Anya Novak](./anya-novak.md) - Sports Physiologist / Partner-Athlete
+- [Aria Patel](./aria-patel.md) - The Underestimated Heart / Cyber Analyst
+- [Baby Boy Barrett](./baby-boy-barrett.md) - Supporting Character
+- [Bailey Brewer](./bailey-brewer.md) - Siren - The Country Queen / Towball Princess
+- [Battle Captain](./battle-captain.md) - The Watch Commander
+- [Bear](./bear.md) - BSS Operator
+- [Bella](./bella.md) - The Hand
+- [Bella Romano](./bella-romano.md) - Italian Heiress / Independent Spirit
+- [Bella's Brothers (2)](./bella-s-brothers-2.md) - Older Siblings
+- [Bella's College Boyfriend](./bella-s-college-boyfriend.md) - Law Student
+- [Bella's Father](./bella-s-father.md) - Bookstore Owner / Family Patriarch
+- [Bella's HS Boyfriend](./bella-s-hs-boyfriend.md) - High School Athlete
+- [Bella's Junior Year Guy](./bella-s-junior-year-guy.md) - College Student
+- [Bella's Mother](./bella-s-mother.md) - Café Owner / Family Matriarch
+- [Bella's Sorority Connection](./bella-s-sorority-connection.md) - Sorority Sister
+- [Beth Hale](./beth-hale.md) - Cousin / Normal Life Model
+- [Bianca "Bee" Navarro](./bianca-bee-navarro.md) - Siren - The Hedonist / Party Queen (MILF Division)
+- [Bianca Lazzaro](./bianca-lazzaro.md) - Chaotic Influencer
+- [Bonnie McCrae](./bonnie-mccrae.md) - Sweet Small-Town Darling
+- [Brendan Cho](./brendan-cho.md) - Intelligence / CIA Agent
+- [Brenna Strowe](./brenna-strowe.md) - Siren - The Amazon Powerhouse (WNBA Division)
+- [Brianna "Bri" Knight](./brianna-bri-knight.md) - Field Reporter / Media Face
+- [Brianna Blossom](./brianna-blossom.md) - Siren - The Blossoming Beauty
+- [Brielle Lawson](./brielle-lawson.md) - Cam Star / Fitness Wellness Celebrity
+- [Brittany LaSalle](./brittany-lasalle.md) - Trophy Wife - The Queen Bee Gold Digger
+- [Brooke](./brooke.md) - Celebrity Chef / Reality TV
+- [Brooke Mathers](./brooke-mathers.md) - Fitness Entrepreneur
+- [COL (ret) Jack Maddox](./col-ret-jack-maddox.md) - Retired Military / Security Consultant
+- [Caitlin "Nia" Clarke](./caitlin-nia-clarke.md) - Siren - The Athletic Golden Girl (WNBA Division)
+- [Caleb Strickland](./caleb-strickland.md) - NSA Cyber Operator
+- [Caleb West](./caleb-west.md) - Wine Importer
+- [Callie Hayes](./callie-hayes.md) - Southwest Regional Leader
+- [Callum "Iron" Reeves](./callum-iron-reeves.md) - Pro Cyclist - Stoic Grinder
+- [Cameron Holt](./cameron-holt.md) - VC / Cyber Defense CEO
+- [Camila Rose](./camila-rose.md) - Digital Bombshell / Cam Queen / Sirens
+- [Camille "Cam" Whitmore](./camille-cam-whitmore.md) - Southern Influencer / Cookbook Author
+- [Caprice Novak](./caprice-novak.md) - Siren - The European Bohemian
+- [Cardinal Alvarez](./cardinal-alvarez.md) - Catholic Cardinal / Chris's Vatican Connection
+- [Carla Martinez](./carla-martinez.md) - Childhood Friend / Roots Connection
+- [Carmen Velasco](./carmen-velasco.md) - Supporting Character
+- [Carolina (NFL Wife)](./carolina-nfl-wife.md) - NFL Quarterback Wife
+- [Carolina Bauer](./carolina-bauer.md) - BSS Fixer / Office Lead
+- [Caroline](./caroline.md) - The Professor
+- [Caroline Bauer](./caroline-bauer.md) - Supporting Character
+- [Caroline Dubois](./caroline-dubois.md) - French Political Wife
+- [Caroline Reilly-Keane](./caroline-reilly-keane.md) - Wives Club Member
+- [Caroline Vance](./caroline-vance.md) - Financial Journalist
+- [Caroline Westbrook](./caroline-westbrook.md) - Finance Expert / Media Presence
+- [Caroline Whitmore](./caroline-whitmore.md) - Political Consultant / BSS Connected
+- [Caroline Wu](./caroline-wu.md) - The Planner Who Won't Pivot
+- [Cassandra "Cassie" Drake](./cassandra-cassie-drake.md) - Finance/Biotech Powerhouse
+- [Cassandra "Cassie" Varela](./cassandra-cassie-varela.md) - Wholesome/Media Faith Anchor
+- [Cassie](./cassie.md) - Mandy's Potential Love Interest (Female)
+- [Catherine "Cat" Ashworth](./catherine-cat-ashworth.md) - Prep School Friend / Reality Check
+- [Catherine "Kate" Brennan](./catherine-kate-brennan.md) - POH Vestal / Faith Anchor
+- [Charlotte "Charlie" Whitmore](./charlotte-charlie-whitmore.md) - Stella-inspired Southern Connector
+- [Charlotte "Lottie" Hale](./charlotte-lottie-hale.md) - The DUFF (Reclaimed)
+- [Charlotte "Lottie" Whitmore](./charlotte-lottie-whitmore.md) - Alex Whitmore's Wife / Ivy Society Anchor
+- [Charlotte Cole](./charlotte-cole.md) - Supporting Character
+- [Charlotte Whitmore](./charlotte-whitmore.md) - Stella-inspired - The Connector
+- [Chiara Benedetti](./chiara-benedetti.md) - The Connected Au Pair
+- [Chloe Davenport](./chloe-davenport.md) - Trophy Wife - The Southern Belle Trophy
+- [Chloe Whitaker](./chloe-whitaker.md) - Child
+- [Chris](./chris.md) - The Steady One
+- [Chris (Last Name TBD)](./chris-last-name-tbd.md) - The Steady Partner
+- [Chris Cole](./chris-cole.md) - High-Profile Client / NFL Star
+- [Chris Donnelly](./chris-donnelly.md) - The Irish-Catholic Partner
+- [Chris Whitaker](./chris-whitaker.md) - Man of Faith / Foundation Executive
+- [Christina "Tina" Morales](./christina-tina-morales.md) - POH Vestal / Rising Leader
+- [Cipher](./cipher.md) - BSS Cyber Specialist
+- [Claire](./claire.md) - BSS Fixer / Office Lead
+- [Claire Donahue](./claire-donahue.md) - Special Olympics Champion Bowler
+- [Claire Hensley](./claire-hensley.md) - Performance Coach / Sports Psychologist
+- [Clara Vega](./clara-vega.md) - Evelyn & Marcus's Daughter
+- [Clive Patterson](./clive-patterson.md) - Academic / Former IMF
+- [Coach Mike Patterson](./coach-mike-patterson.md) - Mentor / Second Father
+- [Col. (Ret.) Jordan Reese](./col-ret-jordan-reese.md) - ULA Senior VP / Former USAF
+- [Cole](./cole.md) - BSS Operator / Cyber-Intel Specialist
+- [Cole Harrington](./cole-harrington.md) - Tier 1 Operator / Addie's Protector
+- [Cole Stratton](./cole-stratton.md) - Former CIA Officer
+- [Colin "Cole" Maddox](./colin-cole-maddox.md) - Pro Sports Team Owner
+- [Colin Mercer](./colin-mercer.md) - Loyal Brother / Anchor to Jasper's Past
+- [Colonel William "Bill" Tate (Ret.)](./colonel-william-bill-tate-ret.md) - Military Mentor / Old Guard
+- [Colt Maddox](./colt-maddox.md) - Ex-SEAL CIA Fixer / Wildcard
+- [Colton](./colton.md) - Mandy's Potential Love Interest (Male)
+- [Damian Carrow](./damian-carrow.md) - Financier / Antagonist
+- [Dana Levitt](./dana-levitt.md) - Sharp-Tongued Strategist
+- [Daniel](./daniel.md) - The Miami Anchor
+- [Daniel "Hawk-Eye" Mercer](./daniel-hawk-eye-mercer.md) - Senior Sentinel / Day Shift Lead
+- [Daniel Rossi](./daniel-rossi.md) - The Underachieving Brother
+- [Danielle "Dani" Cross](./danielle-dani-cross.md) - Canadian/Hollywood Link
+- [Danny Russo](./danny-russo.md) - BSS Traveling Fixer
+- [Darius Cole](./darius-cole.md) - Delta Force HUMINT Specialist
+- [Darius Knox](./darius-knox.md) - The 9-to-5 Guy
+- [David Kim](./david-kim.md) - Tech Executive
+- [David Okoro](./david-okoro.md) - BSS Analyst
+- [Dax](./dax.md) - BSS Operator/Cyber
+- [Dean](./dean.md) - BSS Operator / Intel Specialist
+- [Declan "Fin" O'Rourke](./declan-fin-o-rourke.md) - BSS Analyst
+- [Delilah "Dillon" Hart](./delilah-dillon-hart.md) - Siren - The Infiltrator / Innocent Mask
+- [Derek Callahan](./derek-callahan.md) - Sports & Entertainment Fixer / Former NHL Player
+- [Derek Vaughn](./derek-vaughn.md) - The Decorated Officer Who Crumbles
+- [Doc](./doc.md) - Medical / Support Professional
+- [Dominic "Dom" Arakelian](./dominic-dom-arakelian.md) - Iron Council - Discipline (Bedros Keuilian inspired)
+- [Dominic Arakelian](./dominic-arakelian.md) - The Enforcer/Operator
+- [Dominic Santoro](./dominic-santoro.md) - Luxury Hotel CEO
+- [Dr. Adrian Elias Markos](./dr-adrian-elias-markos.md) - Cardiothoracic Surgeon / Sofia's Boyfriend
+- [Dr. Alex Navarro](./dr-alex-navarro.md) - ER Doctor
+- [Dr. Amanda Reynolds](./dr-amanda-reynolds.md) - Ex-Wife / Co-Parent
+- [Dr. Amara Cross](./dr-amara-cross.md) - Physician / Wives Club Medical Lead
+- [Dr. Daniel Park](./dr-daniel-park.md) - Orthopedic Surgeon
+- [Dr. Evelyn Cross](./dr-evelyn-cross.md) - Infectious Disease Specialist / Power Wife
+- [Dr. Evelyn Ross](./dr-evelyn-ross.md) - Infectious Disease Physician / Wives Club Mentor
+- [Dr. Julia Bennett](./dr-julia-bennett.md) - Neurologist / Friend
+- [Dr. Layla Hassan](./dr-layla-hassan.md) - Naima-inspired - The Anchor
+- [Dr. Miriam Okonkwo](./dr-miriam-okonkwo.md) - Therapist / Trusted Confidante
+- [Dr. Nathan Cole](./dr-nathan-cole.md) - Pediatric Doctor / PT
+- [Dr. Nathan Wells](./dr-nathan-wells.md) - VA Therapist / PTSD Specialist
+- [Dr. Nathaniel "Nate" Archer](./dr-nathaniel-nate-archer.md) - SpaceX Launch Engineer / Math Genius
+- [Dr. Nolan Gray](./dr-nolan-gray.md) - Sports Medicine / NFL Team Doctor
+- [Dr. Sophia Dane](./dr-sophia-dane.md) - Trauma Surgeon / Cathy Mueller Type
+- [Drew Hollister](./drew-hollister.md) - Mental Toughness / Culture Builder
+- [Dylan "Diesel" Rourke](./dylan-diesel-rourke.md) - Adaptive CrossFit Champion
+- [Dylan Marks](./dylan-marks.md) - Elite CrossFit Athlete
+- [Elena Barrett](./elena-barrett.md) - The Anchor / Photographer
+- [Elena Duvall](./elena-duvall.md) - Reputation Fixer - Sports Media
+- [Elena Hale-Barrett](./elena-hale-barrett.md) - Elegant CEO
+- [Eleni Papadakis](./eleni-papadakis.md) - Greek Shipping Heiress
+- [Eli Rourke](./eli-rourke.md) - Adaptive CrossFit Champion
+- [Elise Dubois](./elise-dubois.md) - Lifestyle/Fashion Queen
+- [Elise Romano](./elise-romano.md) - Analyst/Anchor - Data Storyteller
+- [Elsa Winters](./elsa-winters.md) - Siren - The Porcelain Doll
+- [Emily Twinsney](./emily-twinsney.md) - Siren - The Disney Princess
+- [Ethan Cho](./ethan-cho.md) - The Hacker Who Can't Play Team
+- [Ethan Cole](./ethan-cole.md) - Chief of Security / Former SEAL
+- [Ethan Cross](./ethan-cross.md) - BSS Excon
+- [Ethan Crosswell](./ethan-crosswell.md) - Budding Fixer / Former Army Medic
+- [Ethan Drake](./ethan-drake.md) - Venture Capital Heavyweight
+- [Evan Cross](./evan-cross.md) - BSS Multi-Role Operative
+- [Evan Maddox](./evan-maddox.md) - NFL Quarterback
+- [Evan Ross](./evan-ross.md) - Tech Entrepreneur / Chris's Business Friend
+- [Evan Whitmore](./evan-whitmore.md) - Entertainment Lawyer
+- [Evelyn "Evie" Maren](./evelyn-evie-maren.md) - The Everyday Saint / Culinary Arts Teacher
+- [Evelyn Drake](./evelyn-drake.md) - Siren - The Ice Queen (MILF Division)
+- [Evelyn Hartmann](./evelyn-hartmann.md) - Graceful Philanthropist
+- [Evie](./evie.md) - The Sister
+- [Faith Parker](./faith-parker.md) - Celebrity / Country Music Star
+- [Father Anthony Ricci](./father-anthony-ricci.md) - Spiritual Guide / Old Friend
+- [Father Michael Torres](./father-michael-torres.md) - RCIA Director / Faith Guide
+- [Fr. James Callahan](./fr-james-callahan.md) - Catholic Priest / College Friend
+- [Gabriel "Gabe" Vega](./gabriel-gabe-vega.md) - Evelyn & Marcus's Son
+- [Gabrielle "Gabbi" Cortez](./gabrielle-gabbi-cortez.md) - Siren - The Ingenue / Natural Allure
+- [Gareth "Grit" Morgan](./gareth-grit-morgan.md) - Pro Cyclist - Loyal Veteran
+- [Genevieve "Gigi" Laurent](./genevieve-gigi-laurent.md) - POH Vestal / International Bridge
+- [Ghost](./ghost.md) - BSS Operator
+- [Gideon Rourke](./gideon-rourke.md) - Dark Operator / Former DEVGRU
+- [Giovanni Rossi](./giovanni-rossi.md) - Patriarch / Quiet Strength
+- [Grace](./grace.md) - The Daughter
+- [Grace Barrett](./grace-barrett.md) - The Next Generation
+- [Grayson](./grayson.md) - BSS Cyber
+- [Haley Monroe](./haley-monroe.md) - Bubble Trophy Wife - The Pageant Darling
+- [Harper](./harper.md) - The Engineer
+- [Harper Caldwell](./harper-caldwell.md) - The COO / International Operations Lead
+- [Harper Reynolds](./harper-reynolds.md) - The Oracle COO
+- [Harper Steele](./harper-steele.md) - Media Queen / Wives Club Founder
+- [Harper Vance](./harper-vance.md) - COO / Former Journalist / Field Heir
+- [Hawk](./hawk.md) - Tier 1 Operator / Security Chief
+- [Helena "Hannah" Voss](./helena-hannah-voss.md) - Siren - The Muse / Refined Temptress
+- [Helene Schneider](./helene-schneider.md) - German Corporate
+- [Holt](./holt.md) - Tier 1 Operator
+- [Hoya](./hoya.md) - BSS Operator
+- [Isabel Reyes](./isabel-reyes.md) - Cuban-American Social Connector
+- [Isabella "Bella" Rossi](./isabella-bella-rossi.md) - Protagonist/Underdog Rising
+- [Isabella "Izzy" Grace Hawthorne](./isabella-izzy-grace-hawthorne.md) - Addie & Hawk's Daughter (Twin)
+- [Isabella "Izzy" Marconi](./isabella-izzy-marconi.md) - Worldly Mysterious Girlfriend
+- [Isabella "Izzy" Reynolds](./isabella-izzy-reynolds.md) - The Thoughtful Leader
+- [Isabella "Izzy" Santoro](./isabella-izzy-santoro.md) - Former Broadway / Arts Academy Director
+- [Isabella Hawthorne](./isabella-hawthorne.md) - Younger Twin
+- [Isabella Marini](./isabella-marini.md) - Italian Aristocrat
+- [Isabella Marquez](./isabella-marquez.md) - Sara's Daughter (Age 9)
+- [Isla Navarro](./isla-navarro.md) - Supporting Character
+- [Isla Stratton](./isla-stratton.md) - Photographer
+- [Izzy Barrett](./izzy-barrett.md) - Character
+- [Jacqueline Sloane](./jacqueline-sloane.md) - Cyber Warrior / External Fixer
+- [Jamal](./jamal.md) - Special Olympics Athlete
+- [James Reynolds](./james-reynolds.md) - Father / Naval Admiral
+- [Janine](./janine.md) - Logistics Queen / Single Mom
+- [Jasmine "Jazz" Carter](./jasmine-jazz-carter.md) - Special Olympics Champion Swimmer
+- [Jasmine Clarke](./jasmine-clarke.md) - Bubble Trophy Wife - The Party Girl
+- [Jasper Barrett](./jasper-barrett.md) - The CEO
+- [Jenna Carter](./jenna-carter.md) - Nashville Celebrity / Redemption Arc
+- [Jenna Hayes](./jenna-hayes.md) - Siren - The Secret Life
+- [Jessica Cole](./jessica-cole.md) - Mentor / Corporate Strategist
+- [Jessica Hall](./jessica-hall.md) - Original Mentor / Advisor
+- [Jessica Marlowe](./jessica-marlowe.md) - Jasper's Mentor / Corporate Crisis CEO
+- [Jessica Vaughn](./jessica-vaughn.md) - Mentor / Industry Legend
+- [Jillian "Jill" Cassidy](./jillian-jill-cassidy.md) - Siren - The All-American Sweetheart
+- [Jimmy Keller](./jimmy-keller.md) - Former Minor League Baseball Player
+- [Jonas Vinter](./jonas-vinter.md) - Pro Cyclist - Quiet Killer
+- [Jordan Cross](./jordan-cross.md) - NFL Agent / BSS Fixer
+- [Jordan Price](./jordan-price.md) - Mandy's Potential Love Interest (Female)
+- [Jordan Vega](./jordan-vega.md) - Global Brand Ambassador
+- [Julia](./julia.md) - Supporting Character
+- [Julia Raines](./julia-raines.md) - Defense Contractor / Veteran Nonprofit
+- [Julian Mercer](./julian-mercer.md) - The Ivy League Wunderkind
+- [Juliette Navarro](./juliette-navarro.md) - Celebrity Crossover
+- [Kaitlyn](./kaitlyn.md) - Model
+- [Kara Vega](./kara-vega.md) - PR Professional / Protege
+- [Kaylee Dawson](./kaylee-dawson.md) - The Hustler
+- [Keisha Lamb](./keisha-lamb.md) - Track Star / Athlete
+- [Kelsi Morales](./kelsi-morales.md) - Siren - The Fire / The Closer
+- [Kendall "Kensi" Rourke](./kendall-kensi-rourke.md) - Tough Field Operative
+- [Kendra](./kendra.md) - The Analyst
+- [Kendra Donnelly](./kendra-donnelly.md) - Athletic Warrior
+- [Kendra Vos](./kendra-vos.md) - CrossFit Athlete / Intimate Connection
+- [Kendra Whitaker](./kendra-whitaker.md) - CrossFit Athlete / Gym Owner
+- [Kennedy Paige](./kennedy-paige.md) - Siren - The Instagram Princess
+- [Keys](./keys.md) - BSS Cyber
+- [Lauren "Lo" Maren](./lauren-lo-maren.md) - Sports Agent / Tough Enforcer
+- [Lauren Steele](./lauren-steele.md) - Media Professional / Fixer
+- [Lena Ortiz](./lena-ortiz.md) - Diplomatic Society Connector / Elena's Mentor
+- [Lexi Donovan](./lexi-donovan.md) - Supporting Character
+- [Lila Beaumont](./lila-beaumont.md) - PR/Brand Strategist - The Connector
+- [Lila Brooks](./lila-brooks.md) - Literacy Nonprofit Director
+- [Lila Chamberlain](./lila-chamberlain.md) - Dance Teacher / Entertainment Lead
+- [Lila Monroe](./lila-monroe.md) - Sirens Assistant / Apprentice Cam Actress
+- [Lily Summers](./lily-summers.md) - Bubble Trophy Wife - The Sweet Small-Town Beauty
+- [Lily Whitaker](./lily-whitaker.md) - Child
+- [Logan Carr](./logan-carr.md) - BSS Analyst
+- [Lucas Barrett](./lucas-barrett.md) - Child / Baby
+- [Lucía Marquez](./luc-a-marquez.md) - Sara's Daughter (Age 7)
+- [Lukas Reinhardt](./lukas-reinhardt.md) - The PhD Ghost
+- [Madame Elise Laurent](./madame-elise-laurent.md) - Siren - The Gatekeeper / Madam
+- [Madeline "Maddie" Cross](./madeline-maddie-cross.md) - Former VS Model / Wellness Entrepreneur
+- [Madison "Maddie" Cole](./madison-maddie-cole.md) - NFL Wife / Wives Club Member
+- [Madison Cross](./madison-cross.md) - Trophy Wife - The Social Media Princess
+- [Madison Lowe](./madison-lowe.md) - Former Model / Philanthropy Director
+- [Maggie Donnelly](./maggie-donnelly.md) - Supporting Character
+- [Major Ethan Dane](./major-ethan-dane.md) - Tier 1 Operator
+- [Mandy](./mandy.md) - The Healer
+- [Marcello De Luca](./marcello-de-luca.md) - European Investment Banker
+- [Marcus "Cav" Kellan](./marcus-cav-kellan.md) - Pro Cyclist - Flashy Sprinter
+- [Marcus "Mac" Bennett](./marcus-mac-bennett.md) - Senior Analyst
+- [Marcus "Max" Calderon](./marcus-max-calderon.md) - Iron Council - Vision (Ed Mylett inspired)
+- [Marcus (Veteran)](./marcus-veteran.md) - Afghanistan Veteran / Bridge Builder
+- [Marcus Calderon](./marcus-calderon.md) - The Visionary
+- [Marcus Chen](./marcus-chen.md) - College Friend / Fashion Confidante
+- [Marcus Hale](./marcus-hale.md) - Husband / Sports Figure
+- [Marcus Rossi](./marcus-rossi.md) - The Overachieving Brother
+- [Marcus Vance](./marcus-vance.md) - Private Equity Partner
+- [Marcus Vega](./marcus-vega.md) - CIA Economist / BSS Fixer
+- [Margaret "Maggie" Donnelly](./margaret-maggie-donnelly.md) - The Flirty Teacher / Grace's Favorite
+- [Margaret "Meg" Ashford](./margaret-meg-ashford.md) - POH Vestal / Old Guard
+- [Marisa Calderon](./marisa-calderon.md) - The Conscience - Sports Media
+- [Marisol Delgado](./marisol-delgado.md) - Human Rights Attorney / NGO
+- [Marisol Vega](./marisol-vega.md) - Best Friend / Guidance Counselor
+- [Marissa "Misty" Moreno](./marissa-misty-moreno.md) - Siren - The Chaos Agent / Enforcer
+- [Mark Delgado](./mark-delgado.md) - Luxury Real Estate
+- [Mary Donnelly](./mary-donnelly.md) - Chris's Mother / Boston Nurse
+- [Mason](./mason.md) - Mentor
+- [Mason "Deeks" Carrow](./mason-deeks-carrow.md) - Witty Street-Smart Operative
+- [Mason Keating](./mason-keating.md) - Truth-Teller / Loyal Friend
+- [Mason Reilly](./mason-reilly.md) - Best Friend / Truth-Teller
+- [Mason Whitlock](./mason-whitlock.md) - The Anchor/Old Brother
+- [Mateo Marquez](./mateo-marquez.md) - Sara's Son (Age 5)
+- [Matt](./matt.md) - The Patient Partner
+- [Matthew Keating](./matthew-keating.md) - Shipping Magnate / Harper's Husband
+- [Max Sterling](./max-sterling.md) - Visionary / Motivational Powerhouse
+- [Maya Cortez](./maya-cortez.md) - The Reluctant Prodigy
+- [Maya Ruiz](./maya-ruiz.md) - The Oracle / Senior Watch Desk Anchor
+- [Meghan Tiffany](./meghan-tiffany.md) - Siren - The Fresh-Faced Natural
+- [Melissa Lane](./melissa-lane.md) - Siren - The Crazy Teacher
+- [Mia Cho](./mia-cho.md) - Luxury Travel Agent
+- [Mia Laurent](./mia-laurent.md) - Partner of Canadian Leader
+- [Michael "Hawk" Barrett](./michael-hawk-barrett.md) - The Mentor
+- [Michael "Mikey" Gabriel Hawthorne](./michael-mikey-gabriel-hawthorne.md) - Addie & Hawk's Son (Youngest)
+- [Michael Hawthorne](./michael-hawthorne.md) - The Surprise Baby
+- [Michal Abramson](./michal-abramson.md) - Finance/Venture
+- [Molly Gallagher](./molly-gallagher.md) - Lead College Football Sideline Reporter
+- [Msgr. Anthony Russo](./msgr-anthony-russo.md) - Spiritual Guide
+- [Msgr. Patrick Reilly](./msgr-patrick-reilly.md) - Catholic Priest / Spiritual Director
+- [Nadia Trani](./nadia-trani.md) - Siren - The Strategist / Recruiter
+- [Natalia "Tali" Cruz](./natalia-tali-cruz.md) - Former Wall Street / Angel Investor
+- [Natalia "Talia" Cruz](./natalia-talia-cruz.md) - Wall Street Trader / Angel Investor
+- [Natalia Reyes](./natalia-reyes.md) - Bubble Trophy Wife - The Runway Beauty
+- [Natalie "Nat" Serrano](./natalie-nat-serrano.md) - Canadian Chairwoman
+- [Nate "Booker" Ellis](./nate-booker-ellis.md) - Chris's Notre Dame Roommate / Lawyer
+- [Nico](./nico.md) - BSS Operator
+- [Nicolas "Nico" Reynolds](./nicolas-nico-reynolds.md) - The Adventurer
+- [Nicole Brooks](./nicole-brooks.md) - Cam Star / Social Media Powerhouse
+- [Nikolai Drazen](./nikolai-drazen.md) - Russian Defector / Mercenary Fixer
+- [Noa Levi](./noa-levi.md) - Ex-IDF / Fitness Empire
+- [Olivia "Liv" Carrow](./olivia-liv-carrow.md) - Media Consultant / Former Journalist
+- [Owen "Quiet" Talbot](./owen-quiet-talbot.md) - Sentinel / Night Shift Lead
+- [Papal Nuncio](./papal-nuncio.md) - Vatican Ambassador to the US
+- [Patch](./patch.md) - BSS Operator/Cyber
+- [Patricia "Trish" O'Brien-Walsh](./patricia-trish-o-brien-walsh.md) - POH Vestal / Community Anchor
+- [Patrick Donnelly](./patrick-donnelly.md) - Chris's Father / Boston Firefighter
+- [Patrick O'Connor](./patrick-o-connor.md) - Global Consulting VP
+- [Penelope "Penny" Barker](./penelope-penny-barker.md) - Siren - The Matriarch / Enforcer (MILF Division)
+- [Phantom](./phantom.md) - BSS Cyber
+- [Preston Hale](./preston-hale.md) - Private Equity / Former M&A Lawyer
+- [Prince Rafael di Navarra](./prince-rafael-di-navarra.md) - Mediterranean Royal
+- [Princess Katarina of Luxembourg](./princess-katarina-of-luxembourg.md) - European Royal / Vestal Powerhouse
+- [Priya "Radar" Ranganathan](./priya-radar-ranganathan.md) - Sentinel / Night Shift
+- [Rafe Moreno](./rafe-moreno.md) - Unconventional Asset / Forensic Specialist
+- [Raina Locke](./raina-locke.md) - The Enforcer - Sports Media
+- [Remy Everard](./remy-everard.md) - Pro Cyclist - Fiery Phenom
+- [Renna Cielo](./renna-cielo.md) - Siren - The Exotic Mystery
+- [Renna Ryan](./renna-ryan.md) - Cam Star / Business-Savvy
+- [Richard Cole Harrington](./richard-cole-harrington.md) - BSS Client / CEO
+- [Ridge](./ridge.md) - Head of Operators / Former SEAL / Sports Protection
+- [Riley](./riley.md) - BSS Logistics / Road Support
+- [Riley (Midwest)](./riley-midwest.md) - BSS Analyst
+- [Riley Bishop](./riley-bishop.md) - Northwest Regional Leader
+- [Riley St James](./riley-st-james.md) - Luxury Lifestyle Influencer
+- [Riley Whitmore](./riley-whitmore.md) - Supporting Character
+- [Rohan Mehat](./rohan-mehat.md) - Michelin Star Chef
+- [Rosa Rossi](./rosa-rossi.md) - Matriarch / Nurturer
+- [Ruby Duckett](./ruby-duckett.md) - Siren - The Playful Tease
+- [Ryan "Rex" Fraser](./ryan-rex-fraser.md) - Iron Council - Grit (Andy Frisella inspired)
+- [Ryan Fraser](./ryan-fraser.md) - The Fire/Mental Toughness
+- [Ryan McClain](./ryan-mcclain.md) - NFL Player
+- [Ryan McKenna](./ryan-mckenna.md) - Chris's Boston Firefighter Friend
+- [Sabina Ionis](./sabina-ionis.md) - Siren - The Cerebral Playmaker (WNBA Division)
+- [Sabine Keller](./sabine-keller.md) - European Minervae member
+- [Sam "Wraith" Walker](./sam-wraith-walker.md) - Military Brother / Survivor Buddy
+- [Sara](./sara.md) - The Sister
+- [Sara Hale](./sara-hale.md) - The Athletic Anchor
+- [Sara Marquez](./sara-marquez.md) - Elena's Younger Sister / Wives Club Family Member
+- [Sara Whitaker](./sara-whitaker.md) - Family Anchor / Sister
+- [Sarah Chen](./sarah-chen.md) - College Best Friend / Grounding Force
+- [Sarah Hawkins](./sarah-hawkins.md) - Hawk's Sister
+- [Saskia van Doren](./saskia-van-doren.md) - Dutch Fashion/Lifestyle Influencer
+- [Savannah "Savvy" Knox](./savannah-savvy-knox.md) - Fighter / Rebel
+- [Savannah Brooks](./savannah-brooks.md) - Bubble Trophy Wife - Former Cheerleader
+- [Savannah Cole](./savannah-cole.md) - Luxury Real Estate Broker
+- [Savannah Maddox](./savannah-maddox.md) - Sports Team Owner Spouse
+- [Scarlett Vaughn](./scarlett-vaughn.md) - Intellectual Bombshell / Sirens
+- [Sean Taylor](./sean-taylor.md) - The Happy-Go-Lucky Vet
+- [Selene](./selene.md) - The Wild Card
+- [Selene Aravena](./selene-aravena.md) - Former Mossad Assassin / Femme Fatale
+- [Selene Marchetti](./selene-marchetti.md) - Dangerous Beauty
+- [Selene Marquez](./selene-marquez.md) - Panel Anchor / Chaos Coordinator
+- [Selene Thorne](./selene-thorne.md) - Sirens Network Founder / Dangerous Allure
+- [Senator Ruth Halversen](./senator-ruth-halversen.md) - Politician / Senator
+- [Serena Knox](./serena-knox.md) - Siren - The Trophy Fantasy
+- [Serena Ward](./serena-ward.md) - Ex-MI6 / Security Consultant
+- [Serena von Habsburg](./serena-von-habsburg.md) - European Royal / Executive
+- [Shade](./shade.md) - BSS Operator/Cyber
+- [Shane Albright](./shane-albright.md) - AI/Robotics Executive
+- [Shannon Donnelly-Walsh](./shannon-donnelly-walsh.md) - Older Sister / Voice of Experience
+- [Shira Cohen](./shira-cohen.md) - Model/Entrepreneur
+- [Sienna Senter](./sienna-senter.md) - Siren - The Twin Fantasy (Part 1)
+- [Sierra Senter](./sierra-senter.md) - Siren - The Twin Fantasy (Part 2)
+- [Sloane Bishop](./sloane-bishop.md) - TV Actress
+- [Sloane Hartwell](./sloane-hartwell.md) - The Finance Keeper - Sports Media
+- [Sofia](./sofia.md) - Foundation Leader / Evie's Love Interest
+- [Sofia Cross](./sofia-cross.md) - International Arts & Tech
+- [Sofia Demir](./sofia-demir.md) - Turkish Minervae member
+- [Sofia Maroun](./sofia-maroun.md) - Classical Elegance Wife
+- [Sofia Reynolds](./sofia-reynolds.md) - The Princess General
+- [Sofia Ritcher](./sofia-ritcher.md) - BSS Fixer/Analyst
+- [Sophia Klein](./sophia-klein.md) - The Analyst Who Breaks
+- [Sophie Roberts](./sophie-roberts.md) - BSS Mental Coach
+- [Storm](./storm.md) - Therapeutic Horse / Healing Companion
+- [Switch](./switch.md) - BSS Operator/Cyber
+- [Talia Cunningham](./talia-cunningham.md) - Siren - The Cheeky Sharpshooter (WNBA Division)
+- [Tanya Williams](./tanya-williams.md) - Gym Rival / Reluctant Friend
+- [Tasha Velez](./tasha-velez.md) - Elite CrossFit Athlete
+- [Taylor](./taylor.md) - Wives Club Member
+- [Taylor Belmont](./taylor-belmont.md) - Siren - The Fitness Queen
+- [Tessa (Boston College)](./tessa-boston-college.md) - Event Planner / Bella's Best Friend
+- [Tessa Bonhomme](./tessa-bonhomme.md) - Olympian / Broadcaster
+- [Tessa Caldwell](./tessa-caldwell.md) - Comedic Relief / Authentic
+- [Tessa Loring](./tessa-loring.md) - The Storyteller - Sports Media
+- [Tessa McClain](./tessa-mcclain.md) - Sports Journalist / Lifestyle Blogger
+- [Tessa Moore](./tessa-moore.md) - Nurse Practitioner
+- [Tessa Quinn](./tessa-quinn.md) - Elite CrossFit Athlete
+- [The Veterans Group](./the-veterans-group.md) - Healing Community / Support Network
+- [Theo](./theo.md) - BSS Operator/Cyber
+- [Theo Harrington](./theo-harrington.md) - Genius Rookie / Reformed Overthinker
+- [Thomas Whitmore](./thomas-whitmore.md) - Former Congressman / Lobbyist
+- [Tiffany Vaughn](./tiffany-vaughn.md) - Trophy Wife - The Ice Queen
+- [Tom (Veteran)](./tom-veteran.md) - Vietnam Veteran / Wise Elder
+- [Tom Hawkins](./tom-hawkins.md) - BSS Operator
+- [Tommy Eastman](./tommy-eastman.md) - Supporting Character
+- [Troy](./troy.md) - BSS Operator/Cyber
+- [Tyler "Tye" Romero](./tyler-tye-romero.md) - Bar Owner / Social Hub
+- [Valentina Romano](./valentina-romano.md) - Siren - The Italian Bombshell
+- [Valentina Russo](./valentina-russo.md) - The Star / Drama Queen
+- [Valeria Knight](./valeria-knight.md) - European Bombshell / Sirens
+- [Vanessa "Nessa" Caldwell](./vanessa-nessa-caldwell.md) - Political/Media Strategist
+- [Vanessa Caldwell](./vanessa-caldwell.md) - Rebecca Bowen-inspired - The Closer
+- [Vanessa Moretti](./vanessa-moretti.md) - Trophy Wife - The Glamorous Diva
+- [Veronica "Ronnie" Blake](./veronica-ronnie-blake.md) - PR Crisis Firm CEO
+- [Veronica Lane](./veronica-lane.md) - Siren - The Professor (MILF Division)
+- [Victor Langford](./victor-langford.md) - Mentor / Former Employer
+- [Victor Shen](./victor-shen.md) - BSS Client / Heir
+- [Victoria "Vee" Aldridge](./victoria-vee-aldridge.md) - Media Perfectionist
+- [Victoria "Vee" Langford](./victoria-vee-langford.md) - The Shark / Ruthless Attorney
+- [Victoria Barrett](./victoria-barrett.md) - Elena's Mother
+- [Victoria Hale](./victoria-hale.md) - Mother / Aristocratic Matriarch
+- [Viktor Kasabian](./viktor-kasabian.md) - Operator-Entrepreneur
+- [Vincent Dubois](./vincent-dubois.md) - NHL Player
+- [Vivian "Vee" Sinclair](./vivian-vee-sinclair.md) - International Consultant / Old Money
+- [Vivian "Viv" Carroway](./vivian-viv-carroway.md) - Social Architect / Connector
+- [Vivian Carroway](./vivian-carroway.md) - The Peacemaker - Sports Media Elite
+- [Vivienne "Viv" Ross](./vivienne-viv-ross.md) - Old Money Heiress
+- [William "Will" Alexander Hawthorne](./william-will-alexander-hawthorne.md) - Addie & Hawk's Son (Twin)
+- [William Hawthorne](./william-hawthorne.md) - Oldest Twin
+- [Yael Ben-Ari](./yael-ben-ari.md) - Ex-IDF / Cyber VC
+- [Yael Ben-Hur](./yael-ben-hur.md) - Media Anchor/Producer

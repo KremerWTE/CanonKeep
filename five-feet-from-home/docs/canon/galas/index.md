@@ -1,0 +1,29 @@
+# Galas & Events Canon
+
+- [Art Basel Gala - Miami](./art-basel-gala-miami.md) - Art world event - connects to BSS crisis "Gallery" and fake art sting
+- [Bella & Matt Wedding](./bella-matt-wedding.md) - Wedding
+- [Charlotte Gala - Pregnancy Foreshadow](./charlotte-gala-pregnancy-foreshadow.md) - Gala prep scene where Kendra doesn't realize she's pregnant
+- [D.C. Defense Contractor Gala](./d-c-defense-contractor-gala.md) - Defense industry networking - Addie's My Fair Lady debut
+- [Easter Vigil Mass](./easter-vigil-mass.md) - Religious
+- [Elena's Thank You Party](./elena-s-thank-you-party.md) - Gratitude party for everyone who helped during Elena's medical crisis
+- [Ethan's Baptism](./ethan-s-baptism.md) - Baptism of Sara & Mark's son Ethan Charles Whitaker
+- [Foundation Kids Showcase Gala](./foundation-kids-showcase-gala.md) - Showcase Special Olympics and foundation kids' talents
+- [Foundation Kids Showcase Gala (Sofia & Evie)](./foundation-kids-showcase-gala-sofia-evie.md) - Showcase Special Olympics and foundation kids' talents
+- [Grace's Confirmation](./grace-s-confirmation.md) - Religious
+- [Grace's First Communion](./grace-s-first-communion.md) - Religious
+- [Kennedy Foundation Gala](./kennedy-foundation-gala.md) - Charity
+- [Madrid Society Gala](./madrid-society-gala.md) - Elena's first "big break" gala, launched by Lena's connections
+- [NY Gala - Hawk Foundation](./ny-gala-hawk-foundation.md) - Foundation fundraiser, also site of Chris/Kendra engagement
+- [Palace of Honor Galas](./palace-of-honor-galas.md) - Charity
+- [Paris Gala - Weapons Broker Op](./paris-gala-weapons-broker-op.md) - BSS operation - Isabella tracking weapons broker
+- [Party Prep Night - Barrett Estate](./party-prep-night-barrett-estate.md) - Preparation night for upcoming party, key character moments
+- [Savannah's Wedding](./savannah-s-wedding.md) - Lavish Charleston wedding - Jasper absent in DC
+- [Spanish Embassy Gala - Georgetown](./spanish-embassy-gala-georgetown.md) - Diplomatic event - Elena & Lena origin flashback
+- [The Papal Baptism: Kendra's First Child](./the-papal-baptism-kendra-s-first-child.md) - Baptism of Kendra & Chris Donnelly's first child by Pope Francis
+- [Vatican-linked Fundraisers](./vatican-linked-fundraisers.md) - Charity/Religious
+- [Veterans Day Benefit Gala](./veterans-day-benefit-gala.md) - Veterans Day benefit, BSS public face event
+- [Wives Club - Crisis Support Session](./wives-club-crisis-support-session.md) - Emergency gathering when a wife needs support
+- [Wives Club - Double Date Night Planning](./wives-club-double-date-night-planning.md) - Planning couples' social activities and coordinating childcare
+- [Wives Club - Monthly Brunch](./wives-club-monthly-brunch.md) - Monthly celebration and connection
+- [Wives Club - Sara's Welcome Luncheon](./wives-club-sara-s-welcome-luncheon.md) - Welcoming Sara Marquez into the wives club circle
+- [Wives Club - Weekly Wine & Strategy](./wives-club-weekly-wine-strategy.md) - Weekly check-ins, life updates, and wine
